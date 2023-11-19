@@ -1,3 +1,4 @@
+import ArtistCard from '@/components/ArtistCard'
 import CardList from '@/components/CardList'
 import SearchForm from '@/components/SearchForm'
 import Head from 'next/head'
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <SearchForm />
         <CardList />
+        <ArtistCard />
       </main>
     </>
   )

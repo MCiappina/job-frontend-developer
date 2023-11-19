@@ -3,10 +3,12 @@ import { useSearchStore } from '@/stores/store'
 import Input from '../Input'
 import Button from '../Button'
 import { useVideos } from '@/hooks/youtube-api/useVideos'
+import { useAttractions } from '@/hooks/ticketmaster-api/useAttractions'
 
 const SearchForm: FC = () => {
     const { searchQuery, changeSearchQuery } = useSearchStore();
-    const { refetch } = useVideos(searchQuery);
+    const { refetch: videosFetch } = useVideos(searchQuery);
+    const { refetch: attractionsFetch } = useAttractions(searchQuery);
 
     const handleChange = (value: string) => {
         changeSearchQuery(value)
@@ -14,7 +16,8 @@ const SearchForm: FC = () => {
 
     const handleSubmit = (event: FormEvent) => {
         event.preventDefault();
-        refetch();
+        videosFetch();
+        attractionsFetch();
     }
 
     return (
