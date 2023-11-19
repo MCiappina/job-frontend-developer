@@ -1,8 +1,9 @@
 // TODO better styles
 
 import styled from 'styled-components';
+import Button from './index';
 
-export const Button = styled.button`
+export const StyledButton = styled.button`
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;

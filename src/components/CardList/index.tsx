@@ -1,10 +1,17 @@
 import { useVideos } from '@/hooks/youtube-api/useVideos';
-import { useSearchStore } from '@/stores/store';
+import { useModalStore, useSearchStore } from '@/stores/store';
 import React from 'react'
+import YouTubeModal from '../Modal';
 
 const CardItem = ({ video }: any) => {
+    const { openModal, selectVideo } = useModalStore();
+
+  const handleItemClick = () => {
+    selectVideo(video)
+    openModal();
+  };
     return (
-        <li key={video.id.videoId}>{video.snippet.title}</li>
+        <li key={video.id.videoId} onClick={handleItemClick}>{video.snippet.title}</li>
     )
 
 }
@@ -25,6 +32,7 @@ const CardList = () => {
                     ))}
                 </ul>
             )}
+            <YouTubeModal />
         </div>
     )
 }
