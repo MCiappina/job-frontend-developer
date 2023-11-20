@@ -5,7 +5,7 @@ export interface AttractionItem {
     test?: boolean,
     url?: string,
     locale?: string
-    externalLinks?: {
+    externalLinks: {
         youtube?: { url?: string }[],
         twitter?: { url?: string }[],
         itunes?: { url?: string }[],
@@ -16,14 +16,14 @@ export interface AttractionItem {
         homepage?: { url?: string }[],
     }
     aliases?: string[],
-    images?: {
+    images: {
         ratio?: string,
         url?: string,
         width?: number,
         height?: number,
         fallback?: boolean
     }[],
-    classifications?: {
+    classifications: {
         primary?: boolean,
         segment?: {
             id: string,
