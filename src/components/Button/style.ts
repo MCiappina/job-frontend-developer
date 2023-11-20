@@ -1,17 +1,11 @@
-// TODO better styles
-
 import styled from 'styled-components';
-import Button from './index';
 
 export const StyledButton = styled.button`
-  background-color: #4caf50;
   color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 50%;
   cursor: pointer;
-
-  &:hover {
-    background-color: #45a049;
-  }
 `;

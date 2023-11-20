@@ -1,7 +1,8 @@
 import React, { ChangeEvent, FC, InputHTMLAttributes } from 'react'
+import * as S from './style'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-    label: string;
+    label?: string;
     handleChange: (value: string) => void;
 }
 
@@ -14,10 +15,10 @@ const Input: FC<InputProps> = ({ label, handleChange, ...props }) => {
     }
 
     return (
-        <div>
+        <S.InputWrapper>
             <label>{label}</label>
-            <input {...props} onChange={onChange} />
-        </div>
+            <S.Input {...props} onChange={onChange} />
+        </S.InputWrapper>
     )
 }
 

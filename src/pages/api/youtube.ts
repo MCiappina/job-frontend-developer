@@ -13,6 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         type: 'video',
         part: 'snippet',
         videoEmbeddable: 'true',
+        maxResults: '50',
         q: searchQuery as string
     });
 
