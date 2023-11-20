@@ -2,6 +2,8 @@ import ArtistCard from '@/components/ArtistCard'
 import CardList from '@/components/CardList'
 import SearchForm from '@/components/SearchForm'
 import Head from 'next/head'
+import * as S from '../styles/globals'
+import YouTubeModal from '@/components/Modal'
 
 
 export default function Home() {
@@ -13,11 +15,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <SearchForm />
-        <CardList />
-        <ArtistCard />
-      </main>
+      <>
+        <S.Container>
+          <SearchForm />
+          <S.MainContent>
+            <ArtistCard />
+            <CardList />
+          </S.MainContent>
+        </S.Container>
+      </>
+      <YouTubeModal />
     </>
   )
 }

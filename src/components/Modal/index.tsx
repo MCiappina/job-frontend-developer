@@ -19,16 +19,14 @@ const YouTubeModal: FC = () => {
     <S.ModalBackdrop>
       <S.Modal>
         <S.CloseButton className="close-button" onClick={handleClose}>
-          Close
+          X
         </S.CloseButton>
-        <iframe
-          width="560"
-          height="315"
+        <S.Iframe
           src={`https://www.youtube.com/embed/${selectedVideo.id.videoId}`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+        ></S.Iframe>
       </S.Modal>
     </S.ModalBackdrop>
   );

@@ -19,7 +19,8 @@ export const Modal = styled.div`
   padding: 20px;
   max-width: 80%;
   max-height: 80%;
-  overflow: auto;
+  overflow-x: hidden;
+  border-radius: 15px;
 `;
 
 export const CloseButton = styled(Button)`
@@ -31,4 +32,10 @@ export const CloseButton = styled(Button)`
   border: none;
   font-size: 16px;
   color: #fff;
+`
+export const Iframe = styled.iframe`
+  width: 70vw;
+  max-width: 800px;
+  height: 60vh;
+  max-height: 500px;
 `
