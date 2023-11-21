@@ -20,7 +20,7 @@ To run this project locally:
 ```NEXT_PUBLIC_YOUTUBE_BASE_URL=https://youtube.googleapis.com/youtube/v3```
 ```NEXT_PUBLIC_TICKETMASTER_API_KEY=<YOUR_TICKETMASTER_API_KEY>```
 ```NEXT_PUBLIC_TICKETMASTER_BASE_URL=https://app.ticketmaster.com/discovery/v2```
- 6. Finally run ```npm run dev```.
+ 7. Finally run ```npm run dev```.
  
  ## Technologies Used
 
