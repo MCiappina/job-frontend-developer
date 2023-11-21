@@ -5,7 +5,6 @@ import { useModalStore } from '@/stores/store';
 
 const YouTubeModal: FC = () => {
     const { isOpen, closeModal, selectedVideo } = useModalStore();
-    console.log('here')
 
   if (!isOpen) {
     return null;
