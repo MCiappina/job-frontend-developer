@@ -15,12 +15,11 @@ To run this project locally:
  2. Type the following commands using the terminal, inside the project root folder
  3. ```npm install```
  4. Add environment variables creating a .env.local file. You can provide API keys of your own, or use the ones from the [challenge objective](https://github.com/darez-company/job-frontend-developer)
- 5. 
-```NEXT_PUBLIC_YOUTUBE_API_KEY=<YOUR_YOUTUBE_API_KEY>```
-```NEXT_PUBLIC_YOUTUBE_BASE_URL=https://youtube.googleapis.com/youtube/v3```
-```NEXT_PUBLIC_TICKETMASTER_API_KEY=<YOUR_TICKETMASTER_API_KEY>```
-```NEXT_PUBLIC_TICKETMASTER_BASE_URL=https://app.ticketmaster.com/discovery/v2```
- 7. Finally run ```npm run dev```.
+ 5.```NEXT_PUBLIC_YOUTUBE_API_KEY=<YOUR_YOUTUBE_API_KEY>```
+ 6.```NEXT_PUBLIC_YOUTUBE_BASE_URL=https://youtube.googleapis.com/youtube/v3```
+ 7.```NEXT_PUBLIC_TICKETMASTER_API_KEY=<YOUR_TICKETMASTER_API_KEY>```
+ 8.```NEXT_PUBLIC_TICKETMASTER_BASE_URL=https://app.ticketmaster.com/discovery/v2```
+ 9. Finally run ```npm run dev```.
  
  ## Technologies Used
 
